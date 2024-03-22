@@ -1,6 +1,7 @@
 import React from 'react';
 import GameCard from './GameCard';
 import seasonData from './nfl_season_2024.json';
+import ReactPlayer from 'react-player';
 import './App.css';
 
 const App = () => {
@@ -10,6 +11,9 @@ const App = () => {
     <div className="App">
       <h1>Hello NFLKL</h1>
 
+      <div className ="container">
+        <ReactPlayer url="https://www.youtube.com/watch?v=icMWlRCt5qo" />
+      </div>
       <div className="container">
         {Object.entries(seasonData.games).map(([week, games]) => (
           <div key={week}>

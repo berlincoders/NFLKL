@@ -3,12 +3,12 @@
   "games": {
     "week1": [
       {
-        "homeTeam": "Dallas Cowboys",
-        "awayTeam": "New York Giants",
-        "date": "2024-09-10",
+        "homeTeam": "Kansas City Chiefs",
+        "awayTeam": "Denver Broncos",
+        "date": "2024-09-5",
         "time": "13:00",
         "venue": "AT&T Stadium",
-        "imageURL": "https://cdn.vox-cdn.com/thumbor/j3CUP0ROdyNbwxc-lSZW2prGWWs=/0x0:741x494/1820x1213/filters:focal(312x188:430x306):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72614978/DALvsNYG_Game_1.0.jpeg"
+        "imageURL": "https://www.lineups.com/wp-content/uploads/2019/07/chiefs-vs-broncos.jpg"
       },
       {
         "homeTeam": "Los Angeles Rams",
@@ -16,7 +16,7 @@
         "date": "2024-09-11",
         "time": "16:25",
         "venue": "SoFi Stadium",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+        "imageURL": "https://athlonsports.com/.image/t_share/MjAxNDUwOTU0OTI1NTQ5MTc3/image-placeholder-title.jpg"
       },
       {
         "homeTeam": "Green Bay Packers",
@@ -50,7 +50,7 @@
         "date": "2024-09-19",
         "time": "20:20",
         "venue": "Raymond James Stadium",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkn"
       }
     ]
   }

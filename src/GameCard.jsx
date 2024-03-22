@@ -8,10 +8,15 @@ const GameCard = ({ game }) => {
 
   return (
     <div className="game">
-      <img src={game.imageURL !== "N/A" ? game.imageURL : "https://via.placeholder.com/400"}  alt={`${game.homeTeam} vs ${game.awayTeam}`} />
-      <div className="details">
-        <h2>{game.homeTeam} vs {game.awayTeam}</h2>
-        <p>Date: {game.date}</p>
+      <div>
+        <p>{game.date}</p>
+      </div>
+      <div>
+        <img src={game.imageURL !== "N/A" ? game.imageURL : "https://via.placeholder.com/400"}  alt={`${game.homeTeam} vs ${game.awayTeam}`} />
+      </div>
+      <div>
+        <span>{game.Type}</span>
+        <h3>{game.homeTeam} vs {game.awayTeam}</h3>
       </div>
     </div>
   );
