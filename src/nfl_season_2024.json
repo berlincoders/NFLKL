@@ -1,0 +1,57 @@
+{
+  "season": "2024",
+  "games": {
+    "week1": [
+      {
+        "homeTeam": "Dallas Cowboys",
+        "awayTeam": "New York Giants",
+        "date": "2024-09-10",
+        "time": "13:00",
+        "venue": "AT&T Stadium",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      },
+      {
+        "homeTeam": "Los Angeles Rams",
+        "awayTeam": "Chicago Bears",
+        "date": "2024-09-11",
+        "time": "16:25",
+        "venue": "SoFi Stadium",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      },
+      {
+        "homeTeam": "Green Bay Packers",
+        "awayTeam": "San Francisco 49ers",
+        "date": "2024-09-12",
+        "time": "20:20",
+        "venue": "Lambeau Field",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      }
+    ],
+    "week2": [
+      {
+        "homeTeam": "New England Patriots",
+        "awayTeam": "Buffalo Bills",
+        "date": "2024-09-17",
+        "time": "13:00",
+        "venue": "Gillette Stadium",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      },
+      {
+        "homeTeam": "Kansas City Chiefs",
+        "awayTeam": "Denver Broncos",
+        "date": "2024-09-18",
+        "time": "16:25",
+        "venue": "Arrowhead Stadium",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      },
+      {
+        "homeTeam": "Tampa Bay Buccaneers",
+        "awayTeam": "New Orleans Saints",
+        "date": "2024-09-19",
+        "time": "20:20",
+        "venue": "Raymond James Stadium",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      }
+    ]
+  }
+}
