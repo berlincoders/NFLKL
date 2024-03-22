@@ -7,9 +7,9 @@ const GameCard = ({ game }) => {
   }
 
   return (
-    <div className="game-card">
-      <img src={game.imageURL} alt={`${game.homeTeam} vs ${game.awayTeam}`} />
-      <div className="game-details">
+    <div className="game">
+      <img src={game.imageURL !== "N/A" ? game.imageURL : "https://via.placeholder.com/400"}  alt={`${game.homeTeam} vs ${game.awayTeam}`} />
+      <div className="details">
         <h2>{game.homeTeam} vs {game.awayTeam}</h2>
         <p>Date: {game.date}</p>
       </div>

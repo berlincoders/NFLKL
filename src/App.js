@@ -1,6 +1,7 @@
 import React from 'react';
 import GameCard from './GameCard';
 import seasonData from './nfl_season_2024.json';
+import './App.css';
 
 const App = () => {
   console.log('seasonData:', seasonData); // Log seasonData
