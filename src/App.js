@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GameCard from './GameCard';
 import seasonData from './nfl_season_2024.json';
 import ReactPlayer from 'react-player';
 import './App.css';
 
 const App = () => {
+
+  const currentWeek = 1; // Placeholder for current week logic
+    // State variable to hold the week to display by default
+  const [defaultWeek, setDefaultWeek] = useState(currentWeek);
+
+
   console.log('seasonData:', seasonData); // Log seasonData
 
   return (
@@ -15,6 +21,7 @@ const App = () => {
         <ReactPlayer url="https://www.youtube.com/watch?v=icMWlRCt5qo" />
       </div>
       <div className="container">
+        {/* Map only the default week initially */}
         {Object.entries(seasonData.games).map(([week, games]) => (
           <div key={week}>
             <h2>Week {week}</h2>

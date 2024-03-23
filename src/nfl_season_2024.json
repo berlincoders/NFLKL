@@ -13,7 +13,7 @@
       {
         "homeTeam": "Los Angeles Rams",
         "awayTeam": "Chicago Bears",
-        "date": "2024-09-11",
+        "date": "2024-09-8",
         "time": "16:25",
         "venue": "SoFi Stadium",
         "imageURL": "https://athlonsports.com/.image/t_share/MjAxNDUwOTU0OTI1NTQ5MTc3/image-placeholder-title.jpg"
@@ -21,11 +21,20 @@
       {
         "homeTeam": "Green Bay Packers",
         "awayTeam": "San Francisco 49ers",
-        "date": "2024-09-12",
+        "date": "2024-09-8",
+        "time": "20:20",
+        "venue": "Lambeau Field",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      },
+      {
+        "homeTeam": "Green Bay Packers",
+        "awayTeam": "San Francisco 49ers",
+        "date": "2024-09-8",
         "time": "20:20",
         "venue": "Lambeau Field",
         "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
       }
+
     ],
     "week2": [
       {
@@ -43,6 +52,14 @@
         "time": "16:25",
         "venue": "Arrowhead Stadium",
         "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+      },
+      {
+        "homeTeam": "Tampa Bay Buccaneers",
+        "awayTeam": "New Orleans Saints",
+        "date": "2024-09-19",
+        "time": "20:20",
+        "venue": "Raymond James Stadium",
+        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkn"
       },
       {
         "homeTeam": "Tampa Bay Buccaneers",
