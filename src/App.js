@@ -4,7 +4,23 @@ import seasonData from './api/nfl_season_2024.json';
 import ReactPlayer from 'react-player';
 import './App.css';
 
+
 const App = () => {
+
+  const [searchWeek, setSearchWeek] = useState(''); // State to store the search week
+
+    // Handle input change
+    const handleInputChange = (event) => {
+      setSearchWeek(event.target.value);
+    };
+
+      // Filter games based on the search week
+  const filteredGames = Object.entries(seasonData.games)
+  .filter(([week]) => week.toLowerCase().includes(searchWeek.toLowerCase()))
+  .reduce((acc, [week, games]) => {
+    acc[week] = games;
+    return acc;
+  }, {});
 
   const currentWeek = 1; // Placeholder for current week logic
     // State variable to hold the week to display by default
@@ -20,18 +36,26 @@ const App = () => {
       <div className ="container">
         <ReactPlayer url="https://www.youtube.com/watch?v=icMWlRCt5qo" />
       </div>
+
+      {/* Search box */}
       <div className="container">
-        {/* Map only the default week initially */}
-        {Object.entries(seasonData.games).map(([week, games]) => (
+        <input
+          type="text"
+          placeholder="Search by week..."
+          value={searchWeek}
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <div className="container">
+        {/* Map filtered games */}
+        {Object.entries(filteredGames).map(([week, games]) => (
           <div key={week}>
             <h2>Week {week}</h2>
             <div className="row">
               {games.map((game, index) => (
                 <div key={index} className="col-md-4">
-                  <GameCard
-                    key={index} // Add key to GameCard component
-                    game={game} // Pass entire game object as prop
-                  />
+                  <GameCard key={index} game={game} />
                 </div>
               ))}
             </div>
