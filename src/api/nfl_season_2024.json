@@ -9,19 +9,20 @@
         "awayAlias": "DEN",
         "date": "2024-09-5",
         "timeUS": "13:00",
-        "timeEU": "19:00",
         "venue": "AT&T Stadium",
-        "imageURLHome": "./images/KC_home.png",
-        "imageURLAway": "./images/DEN_away.png"
+        "imageURLHome": "/images/KC_home.png",
+        "imageURLAway": "/images/DEN_away.png"
       },
       {
         "homeTeam": "Los Angeles Rams",
+        "homeAlias": "LA",
         "awayTeam": "Chicago Bears",
+        "awayAlias": "CHI",
         "date": "2024-09-8",
         "time": "16:25",
         "venue": "SoFi Stadium",
-        "imageURLHome": "./images/LA_home.png",
-        "imageURLAway": "./images/CHI_away.png"
+        "imageURLHome": "/images/LA_home.png",
+        "imageURLAway": "/images/CHI_away.png"
       },
       {
         "homeTeam": "Green Bay Packers",
@@ -29,8 +30,8 @@
         "date": "2024-09-8",
         "time": "20:20",
         "venue": "Lambeau Field",
-        "imageURLHome": "./images/GB_home.png",
-        "imageURLAway": "./images/SF_away.png"
+        "imageURLHome": "/images/GB_home.png",
+        "imageURLAway": "/images/SF_away.png"
       },
       {
         "homeTeam": "Green Bay Packers",
@@ -38,28 +39,32 @@
         "date": "2024-09-8",
         "time": "20:20",
         "venue": "Lambeau Field",
-        "imageURLHome": "./images/GB_home.png",
-        "imageURLAway": "./images/SF_away.png"
+        "imageURLHome": "/images/GB_home.png",
+        "imageURLAway": "/images/SF_away.png"
       }
     ],
     "week2": [
       {
-        "homeTeam": "New England Patriots",
-        "awayTeam": "Buffalo Bills",
-        "date": "2024-09-17",
-        "time": "13:00",
-        "venue": "Gillette Stadium",
-        "imageURLHome": "./images/NE_home.png",
-        "imageURLAway": "./images/BUF_away.png"
+          "homeTeam": "New England Patriots",
+          "homeAlias": "NE",
+          "awayTeam": "Denver Broncos",
+          "awayAlias": "DEN",
+          "date": "2024-09-5",
+          "timeUS": "13:00",
+          "venue": "AT&T Stadium",
+          "imageURLHome": "/images/NE_home.png",
+          "imageURLAway": "/images/DEN_away.png"
       },
       {
         "homeTeam": "Kansas City Chiefs",
+        "homeAlias": "KC",
         "awayTeam": "Denver Broncos",
+        "awayAlias": "DEN",
         "date": "2024-09-18",
         "time": "16:25",
         "venue": "Arrowhead Stadium",
-        "imageURLHome": "./images/KC_home.png",
-        "imageURLAway": "./images/DEN_away.png"
+        "imageURLHome": "/images/KC_home.png)",
+        "imageURLAway": "/images/DB_home.png"
       },
       {
         "homeTeam": "Tampa Bay Buccaneers",
@@ -67,17 +72,19 @@
         "date": "2024-09-19",
         "time": "20:20",
         "venue": "Raymond James Stadium",
-        "imageURLHome": "./images/TB_home.png",
-        "imageURLAway": "./images/NO_away.png"
+        "imageURLHome": "/images/TB_home.png",
+        "imageURLAway": "/images/NO_away.png"
       },
       {
         "homeTeam": "Tampa Bay Buccaneers",
+        "homeAlias": "TB",
         "awayTeam": "New Orleans Saints",
+        "awayAlias": "NO",
         "date": "2024-09-19",
         "time": "20:20",
         "venue": "Raymond James Stadium",
-        "imageURLHome": "./images/TB_home.png",
-        "imageURLAway": "./images/NO_away.png"
+        "imageURLHome": "/images/TB_home.png",
+        "imageURLAway": "/images/NO_away.png"
       }
     ]
   }

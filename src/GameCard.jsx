@@ -1,6 +1,4 @@
 import React from 'react';
-import RightImage from './images/KC_home.png';
-import LeftImage from './images/DEN_away.png';
 
 const GameCard = ({ game }) => {
   // Check if the game object exists and contains the necessary properties
@@ -14,8 +12,8 @@ const GameCard = ({ game }) => {
         <p>{game.date}</p>
       </div>
       <div className="images-container">
-        <img src={LeftImage} alt="Kansas City Chiefs Home" />
-        <img src={RightImage} alt="Denver Broncos Away" />
+        <img src={game.imageURLHome} alt={`${game.homeTeam} Home`} />
+        <img src={game.imageURLAway} alt={`${game.awayTeam} Away`} />
       </div>
       <div>
         <span>{game.Type}</span>
@@ -26,3 +24,4 @@ const GameCard = ({ game }) => {
 };
 
 export default GameCard;
+
