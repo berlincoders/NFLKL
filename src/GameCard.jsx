@@ -1,8 +1,10 @@
 import React from 'react';
+import RightImage from './images/KC_home.png';
+import LeftImage from './images/DEN_away.png';
 
 const GameCard = ({ game }) => {
   // Check if the game object exists and contains the necessary properties
-  if (!game || !game.homeTeam || !game.awayTeam || !game.date || !game.imageURL) {
+  if (!game || !game.homeTeam || !game.awayTeam || !game.date) {
     return null; // Return null if the game object is undefined or missing properties
   }
 
@@ -11,8 +13,9 @@ const GameCard = ({ game }) => {
       <div>
         <p>{game.date}</p>
       </div>
-      <div>
-        <img src={game.imageURL !== "N/A" ? game.imageURL : "https://via.placeholder.com/400"}  alt={`${game.homeTeam} vs ${game.awayTeam}`} />
+      <div className="images-container">
+        <img src={LeftImage} alt="Kansas City Chiefs Home" />
+        <img src={RightImage} alt="Denver Broncos Away" />
       </div>
       <div>
         <span>{game.Type}</span>

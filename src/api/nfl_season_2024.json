@@ -4,11 +4,15 @@
     "week1": [
       {
         "homeTeam": "Kansas City Chiefs",
+        "homeAlias": "KC",
         "awayTeam": "Denver Broncos",
+        "awayAlias": "DEN",
         "date": "2024-09-5",
-        "time": "13:00",
+        "timeUS": "13:00",
+        "timeEU": "19:00",
         "venue": "AT&T Stadium",
-        "imageURL": "https://www.lineups.com/wp-content/uploads/2019/07/chiefs-vs-broncos.jpg"
+        "imageURLHome": "./images/KC_home.png",
+        "imageURLAway": "./images/DEN_away.png"
       },
       {
         "homeTeam": "Los Angeles Rams",
@@ -16,7 +20,8 @@
         "date": "2024-09-8",
         "time": "16:25",
         "venue": "SoFi Stadium",
-        "imageURL": "https://athlonsports.com/.image/t_share/MjAxNDUwOTU0OTI1NTQ5MTc3/image-placeholder-title.jpg"
+        "imageURLHome": "./images/LA_home.png",
+        "imageURLAway": "./images/CHI_away.png"
       },
       {
         "homeTeam": "Green Bay Packers",
@@ -24,7 +29,8 @@
         "date": "2024-09-8",
         "time": "20:20",
         "venue": "Lambeau Field",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+        "imageURLHome": "./images/GB_home.png",
+        "imageURLAway": "./images/SF_away.png"
       },
       {
         "homeTeam": "Green Bay Packers",
@@ -32,9 +38,9 @@
         "date": "2024-09-8",
         "time": "20:20",
         "venue": "Lambeau Field",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+        "imageURLHome": "./images/GB_home.png",
+        "imageURLAway": "./images/SF_away.png"
       }
-
     ],
     "week2": [
       {
@@ -43,7 +49,8 @@
         "date": "2024-09-17",
         "time": "13:00",
         "venue": "Gillette Stadium",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+        "imageURLHome": "./images/NE_home.png",
+        "imageURLAway": "./images/BUF_away.png"
       },
       {
         "homeTeam": "Kansas City Chiefs",
@@ -51,7 +58,8 @@
         "date": "2024-09-18",
         "time": "16:25",
         "venue": "Arrowhead Stadium",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkne"
+        "imageURLHome": "./images/KC_home.png",
+        "imageURLAway": "./images/DEN_away.png"
       },
       {
         "homeTeam": "Tampa Bay Buccaneers",
@@ -59,7 +67,8 @@
         "date": "2024-09-19",
         "time": "20:20",
         "venue": "Raymond James Stadium",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkn"
+        "imageURLHome": "./images/TB_home.png",
+        "imageURLAway": "./images/NO_away.png"
       },
       {
         "homeTeam": "Tampa Bay Buccaneers",
@@ -67,7 +76,8 @@
         "date": "2024-09-19",
         "time": "20:20",
         "venue": "Raymond James Stadium",
-        "imageURL": "https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/cowboys/pdazsfzpjoe5vnggbkn"
+        "imageURLHome": "./images/TB_home.png",
+        "imageURLAway": "./images/NO_away.png"
       }
     ]
   }
