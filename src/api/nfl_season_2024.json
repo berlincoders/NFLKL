@@ -11,7 +11,7 @@
         "timeUS": "21:00",
         "venue": "Ford Field",
         "imageURLHome": "/images/KC_home.png",
-        "imageURLAway": "",
+        "imageURLAway": "/images/DET_away.png",
         "available": true
       },
       {
@@ -155,7 +155,7 @@
         "timeUS": "25:00",
         "venue": "Lincoln Financial Field",
         "imageURLHome": "",
-        "imageURLAway": "",
+        "imageURLAway": "/images/NE_away.png",
         "available": false
       },
       {
@@ -167,7 +167,7 @@
         "timeUS": "30:00",
         "venue": "SoFi Stadium",
         "imageURLHome": "",
-        "imageURLAway": "",
+        "imageURLAway": "/images/SEA_away.png",
         "available": false
       },
       {
@@ -301,7 +301,7 @@
         "timeUS": "20:20",
         "venue": "Allegiant Stadium",
         "imageURLHome": "",
-        "imageURLAway": "",
+        "imageURLAway": "/images/CLE_away.png",
         "available": false
       },
       {
@@ -313,7 +313,7 @@
         "timeUS": "13:00",
         "venue": "U.S. Bank Stadium",
         "imageURLHome": "",
-        "imageURLAway": "",
+        "imageURLAway": "/images/SEA_away.png",
         "available": false
       },
       {
@@ -372,7 +372,7 @@
         "date": "2024-09-19",
         "timeUS": "20:20",
         "venue": "Ford Field",
-        "imageURLHome": "",
+        "imageURLHome": "/images/DET_home.png",
         "imageURLAway": "",
         "available": false
       },
@@ -580,6 +580,200 @@
         "venue": "Lucas Oil Stadium",
         "imageURLHome": "./images/IND_home.png",
         "imageURLAway": "./images/NYG_away.png",
+        "available": true
+      }
+    ],
+    "week4": [
+      {
+        "homeTeam": "Dallas Cowboys",
+        "homeAlias": "DAL",
+        "awayTeam": "Green Bay Packers",
+        "awayAlias": "GB",
+        "date": "2024-09-22",
+        "timeUS": "13:00",
+        "venue": "AT&T Stadium",
+        "imageURLHome": "./images/DAL_home.png",
+        "imageURLAway": "./images/GB_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "New England Patriots",
+        "homeAlias": "NE",
+        "awayTeam": "Las Vegas Raiders",
+        "awayAlias": "LV",
+        "date": "2024-09-22",
+        "timeUS": "16:25",
+        "venue": "Gillette Stadium",
+        "imageURLHome": "./images/NE_home.png",
+        "imageURLAway": "./images/LV_away.png",
+        "available": false
+      },
+      {
+        "homeTeam": "San Francisco 49ers",
+        "homeAlias": "SF",
+        "awayTeam": "Kansas City Chiefs",
+        "awayAlias": "KC",
+        "date": "2024-09-22",
+        "timeUS": "20:20",
+        "venue": "Levi's Stadium",
+        "imageURLHome": "./images/SF_home.png",
+        "imageURLAway": "./images/KC_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Tampa Bay Buccaneers",
+        "homeAlias": "TB",
+        "awayTeam": "Arizona Cardinals",
+        "awayAlias": "ARI",
+        "date": "2024-09-23",
+        "timeUS": "13:00",
+        "venue": "Raymond James Stadium",
+        "imageURLHome": "./images/TB_home.png",
+        "imageURLAway": "./images/ARI_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Seattle Seahawks",
+        "homeAlias": "SEA",
+        "awayTeam": "New Orleans Saints",
+        "awayAlias": "NO",
+        "date": "2024-09-23",
+        "timeUS": "16:25",
+        "venue": "Lumen Field",
+        "imageURLHome": "./images/SEA_home.png",
+        "imageURLAway": "./images/NO_away.png",
+        "available": false
+      },
+      {
+        "homeTeam": "Chicago Bears",
+        "homeAlias": "CHI",
+        "awayTeam": "Los Angeles Rams",
+        "awayAlias": "LA",
+        "date": "2024-09-23",
+        "timeUS": "20:20",
+        "venue": "Soldier Field",
+        "imageURLHome": "./images/CHI_home.png",
+        "imageURLAway": "./images/LA_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Cleveland Browns",
+        "homeAlias": "CLE",
+        "awayTeam": "Baltimore Ravens",
+        "awayAlias": "BAL",
+        "date": "2024-09-24",
+        "timeUS": "13:00",
+        "venue": "FirstEnergy Stadium",
+        "imageURLHome": "./images/CLE_home.png",
+        "imageURLAway": "./images/BAL_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Indianapolis Colts",
+        "homeAlias": "IND",
+        "awayTeam": "Houston Texans",
+        "awayAlias": "HOU",
+        "date": "2024-09-24",
+        "timeUS": "16:25",
+        "venue": "Lucas Oil Stadium",
+        "imageURLHome": "./images/IND_home.png",
+        "imageURLAway": "./images/HOU_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Los Angeles Chargers",
+        "homeAlias": "LAC",
+        "awayTeam": "Denver Broncos",
+        "awayAlias": "DEN",
+        "date": "2024-09-24",
+        "timeUS": "20:20",
+        "venue": "SoFi Stadium",
+        "imageURLHome": "./images/LAC_home.png",
+        "imageURLAway": "./images/DEN_away.png",
+        "available": false
+      },
+      {
+        "homeTeam": "New York Jets",
+        "homeAlias": "NYJ",
+        "awayTeam": "Buffalo Bills",
+        "awayAlias": "BUF",
+        "date": "2024-09-25",
+        "timeUS": "13:00",
+        "venue": "MetLife Stadium",
+        "imageURLHome": "./images/NYJ_home.png",
+        "imageURLAway": "./images/BUF_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Philadelphia Eagles",
+        "homeAlias": "PHI",
+        "awayTeam": "Cincinnati Bengals",
+        "awayAlias": "CIN",
+        "date": "2024-09-25",
+        "timeUS": "16:25",
+        "venue": "Lincoln Financial Field",
+        "imageURLHome": "./images/PHI_home.png",
+        "imageURLAway": "./images/CIN_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Pittsburgh Steelers",
+        "homeAlias": "PIT",
+        "awayTeam": "Las Vegas Raiders",
+        "awayAlias": "LV",
+        "date": "2024-09-25",
+        "timeUS": "20:20",
+        "venue": "Heinz Field",
+        "imageURLHome": "./images/PIT_home.png",
+        "imageURLAway": "./images/LV_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Washington Commanders",
+        "homeAlias": "WAS",
+        "awayTeam": "Minnesota Vikings",
+        "awayAlias": "MIN",
+        "date": "2024-09-25",
+        "timeUS": "13:00",
+        "venue": "FedExField",
+        "imageURLHome": "./images/WAS_home.png",
+        "imageURLAway": "./images/MIN_away.png",
+        "available": false
+      },
+      {
+        "homeTeam": "Miami Dolphins",
+        "homeAlias": "MIA",
+        "awayTeam": "Jacksonville Jaguars",
+        "awayAlias": "JAC",
+        "date": "2024-09-25",
+        "timeUS": "16:25",
+        "venue": "Hard Rock Stadium",
+        "imageURLHome": "./images/MIA_home.png",
+        "imageURLAway": "./images/JAC_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "Tennessee Titans",
+        "homeAlias": "TEN",
+        "awayTeam": "Carolina Panthers",
+        "awayAlias": "CAR",
+        "date": "2024-09-25",
+        "timeUS": "20:20",
+        "venue": "Nissan Stadium",
+        "imageURLHome": "./images/TEN_home.png",
+        "imageURLAway": "./images/CAR_away.png",
+        "available": true
+      },
+      {
+        "homeTeam": "New Orleans Saints",
+        "homeAlias": "NO",
+        "awayTeam": "Detroit Lions",
+        "awayAlias": "DET",
+        "date": "2024-09-26",
+        "timeUS": "20:15",
+        "venue": "Caesars Superdome",
+        "imageURLHome": "./images/NO_home.png",
+        "imageURLAway": "./images/DET_away.png",
         "available": true
       }
     ]
