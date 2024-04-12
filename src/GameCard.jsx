@@ -14,7 +14,7 @@ const GameCard = ({ game }) => {
   return (
     <div className="game">
       <div>
-        <p>{game.date}</p>
+        <p>{game.date}  time:{game.timeUS}</p>
       </div>
       <div className="images-container">
         {isValidUrl(game.imageURLHome) ? (
@@ -37,4 +37,3 @@ const GameCard = ({ game }) => {
 };
 
 export default GameCard;
-
