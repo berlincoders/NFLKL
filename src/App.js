@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import GameCard from './GameCard';
+import SearchBox from './SearchBox';
 import seasonData from './api/nfl_season_2024.json';
 import ReactPlayer from 'react-player';
 import './App.css';
@@ -26,28 +27,30 @@ const App = () => {
     // State variable to hold the week to display by default
   const [defaultWeek, setDefaultWeek] = useState(currentWeek);
 
+    // Define handleSearch function
+    const handleSearch = (query) => {
+      setSearchWeek(query); // Update the searchWeek state with the query
+    };
+
 
   console.log('seasonData:', seasonData); // Log seasonData
 
   return (
     <div className="App">
-      <h1>Hello NFLKL</h1>
+      {/*<h1>Hello NFLKL</h1>*/}
 
       <div className ="container">
-        <ReactPlayer url="https://www.youtube.com/watch?v=rrAioAcW3rc" />
+        <ReactPlayer url="https://www.youtube.com/watch?v=THfonmqAONQ" />
         {/* https://www.youtube.com/watch?v=rrAioAcW3rc*/}
         {/* https://www.youtube.com/watch?v=icMWlRCt5qo*/}
       </div>
 
-      {/* Search box */}
+    {/* Search box */}
+    <div>
       <div className="container">
-        <input
-          type="text"
-          placeholder="Search by week..."
-          value={searchWeek}
-          onChange={handleInputChange}
-        />
+        <SearchBox onSearch={handleSearch} />
       </div>
+    </div>
 
       <div className="container">
         {/* Map filtered games */}
