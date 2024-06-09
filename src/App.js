@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import GameCard from './GameCard';
-import SearchBox from './SearchBox';
+import GameCard from './components/GameCard';
+import SearchBox from './components/SearchBox';
 import seasonData from './api/nfl_season_2024.json';
 import ReactPlayer from 'react-player';
 import './App.css';
