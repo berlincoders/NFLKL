@@ -12,11 +12,11 @@ const MiniCard = ({ game }) => {
   };
 
   return (
-    <div className="flex flex-col bg-white shadow-md rounded-md p-4 ">
-      <div>
-        <p className="text-sm text-white" >{game.date} time:{game.timeUS}</p>
-      </div>
-      <div className="flex justify-between my-2">
+    <div className="flex flex-col bg-gray-400 shadow-md rounded-md p-2 m-4">
+        <div>
+        <p className="text-sm text-grey-600" >{game.date} time:{game.timeUS}</p>
+        </div>
+        <div className="flex gap-14 justify-center my-2">
         {isValidUrl(game.imageLogoHome) ? (
           <img className="w-24 h-24 object-cover"src={game.imageLogoHome} alt={`${game.homeTeam} Home`} />
         ) : (
@@ -27,11 +27,11 @@ const MiniCard = ({ game }) => {
         ) : (
           <img src="/images/404_home.png" alt="404" />
         )}
-      </div>
-      <div>
-        <span className="text-xs text-gray-500">{game.Type}</span>
-        <h3 className="text-lg font-semibold">{game.homeTeam} vs {game.awayTeam}</h3>
-      </div>
+        </div>
+        <div>
+          <span className="text-xs text-gray-500">{game.Type}</span>
+          <h3 className="text-lg font-semibold">{game.homeTeam} vs {game.awayTeam}</h3>
+        </div>
     </div>
   );
 };

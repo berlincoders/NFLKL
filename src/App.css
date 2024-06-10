@@ -1,3 +1,12 @@
+/* main.css */
+
+/* Add the Tailwind directives for each layer */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 body {
   font-family: var(--font-roboto);
   background-color: #212426 !important;
@@ -125,4 +134,3 @@ within an element with the class game. Let's break down each property:*/
   max-width: 50%; /* Ensure images take up 50% of the container width */
   height: auto; /* Maintain aspect ratio */
 }
-
