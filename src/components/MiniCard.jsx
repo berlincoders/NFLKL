@@ -12,7 +12,7 @@ const MiniCard = ({ game }) => {
   };
 
   return (
-    <div className="flex flex-col bg-gray-400 shadow-md rounded-md p-2 m-4">
+    <div className="w-[310px] flex flex-col bg-gray-600 shadow-md rounded-lg border-0 overflow-hidden p-2 m-6">
         <div>
         <p className="text-sm text-grey-600" >{game.date} time:{game.timeUS}</p>
         </div>
@@ -30,7 +30,7 @@ const MiniCard = ({ game }) => {
         </div>
         <div>
           <span className="text-xs text-gray-500">{game.Type}</span>
-          <h3 className="text-lg font-semibold">{game.homeTeam} vs {game.awayTeam}</h3>
+          <p className="text-ls font-semibold">{game.homeTeam} vs {game.awayTeam}</p>
         </div>
     </div>
   );
