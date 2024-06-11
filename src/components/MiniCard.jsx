@@ -14,9 +14,9 @@ const MiniCard = ({ game }) => {
   return (
    //relative rounded-lg     hover:shadow-2xl hover:scale-105 transform-gpu
     <div className="w-[310px] flex flex-col bg-[#343739]  shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 rounded-lg border-0 overflow-hidden p-2 m-6">
-        <div>
-            <p className="text-sm text-grey-600" >{game.date} time:{game.timeUS}</p>
-        </div>
+        <>
+            <p className="text-sm text-[#f9d3b4] " >{game.date} time:{game.timeUS}</p>
+        </>
         <div className="flex gap-14 justify-center my-2">
             {isValidUrl(game.imageLogoHome) ? (
               <img className="w-15 h-15 object-cover"src={game.imageLogoHome} alt={`${game.homeTeam} Home`} />
@@ -29,10 +29,9 @@ const MiniCard = ({ game }) => {
               <img src="/images/404_home.png" alt="404" />
             )}
         </div>
-        <div>
-            <span className="text-xs text-gray-500">{game.Type}</span>
-            <p className="text-ls font-semibold">{game.homeTeam} vs {game.awayTeam}</p>
-        </div>
+        <>
+            <p className="text-xs text-[#f9d3b4]  text-center font-semibold mt-1">{game.homeTeam} vs {game.awayTeam}</p>
+        </>
     </div>
   );
 };
