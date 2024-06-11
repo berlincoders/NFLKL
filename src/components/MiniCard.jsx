@@ -12,25 +12,26 @@ const MiniCard = ({ game }) => {
   };
 
   return (
-    <div className="w-[310px] flex flex-col bg-gray-600 shadow-md rounded-lg border-0 overflow-hidden p-2 m-6">
+   //relative rounded-lg     hover:shadow-2xl hover:scale-105 transform-gpu
+    <div className="w-[310px] flex flex-col bg-[#343739]  shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 rounded-lg border-0 overflow-hidden p-2 m-6">
         <div>
-        <p className="text-sm text-grey-600" >{game.date} time:{game.timeUS}</p>
+            <p className="text-sm text-grey-600" >{game.date} time:{game.timeUS}</p>
         </div>
         <div className="flex gap-14 justify-center my-2">
-        {isValidUrl(game.imageLogoHome) ? (
-          <img className="w-24 h-24 object-cover"src={game.imageLogoHome} alt={`${game.homeTeam} Home`} />
-        ) : (
-          <img src="/images/404_home.png" alt="404" />
-        )}
-        {isValidUrl(game.imageLogoAway) ? (
-          <img src={game.imageLogoAway} alt={`${game.awayTeam} Away`} />
-        ) : (
-          <img src="/images/404_home.png" alt="404" />
-        )}
+            {isValidUrl(game.imageLogoHome) ? (
+              <img className="w-15 h-15 object-cover"src={game.imageLogoHome} alt={`${game.homeTeam} Home`} />
+            ) : (
+              <img src="/images/404_home.png" alt="404" />
+            )}
+            {isValidUrl(game.imageLogoAway) ? (
+              <img src={game.imageLogoAway} alt={`${game.awayTeam} Away`} />
+            ) : (
+              <img src="/images/404_home.png" alt="404" />
+            )}
         </div>
         <div>
-          <span className="text-xs text-gray-500">{game.Type}</span>
-          <p className="text-ls font-semibold">{game.homeTeam} vs {game.awayTeam}</p>
+            <span className="text-xs text-gray-500">{game.Type}</span>
+            <p className="text-ls font-semibold">{game.homeTeam} vs {game.awayTeam}</p>
         </div>
     </div>
   );
