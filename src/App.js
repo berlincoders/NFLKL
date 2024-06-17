@@ -57,6 +57,7 @@ export const App = () => {
 
       <div className="container">
   {/* Map filtered games */}
+  
   {Object.entries(filteredGames).map(([week, games]) => (
     <div key={week}>
       <h2>Week {week}</h2>
