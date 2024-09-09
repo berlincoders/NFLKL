@@ -407,15 +407,15 @@
 "week3": [
     {
       "homeTeam": "Patriots",
-      "homeAlias": "NE",
+      "homeAlias": "PAT",
       "awayTeam": "Jets",
       "awayAlias": "NYJ",
       "date": "2024-09-20",
       "timeUS": "20:15",
       "venue": "Ticketmaster",
-      "imageURLHome": "/images/Patriots_home.png",
-      "imageURLAway": "/images/Jets_away.png",
-      "imageLogoHome": "/images/NE.png",
+      "imageURLHome": "/images/PAT_home.png",
+      "imageURLAway": "/images/NYJ_away.png",
+      "imageLogoHome": "/images/PAT.png",
       "imageLogoAway": "/images/NYJ.png",
       "channel": "Courtyard",
       "available": false
