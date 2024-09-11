@@ -1,4 +1,5 @@
 import React from 'react';
+import './MiniCard.css'; // Import the CSS file
 
 const MiniCard = ({ game }) => {
   if (!game) {
@@ -9,17 +10,15 @@ const MiniCard = ({ game }) => {
 
   return (
     <div className="mini-card">
-      <p>{game.date} - {game.timeUS}</p>
+      <p>{game.timeUS}</p>
       <div className="images-container">
         <img
           src={game.imageLogoHome || defaultImage}
           alt={`${game.homeTeam} Home`}
-          style={{ width: '50px', height: '50px' }}
         />
         <img
           src={game.imageLogoAway || defaultImage}
           alt={`${game.awayTeam} Away`}
-          style={{ width: '50px', height: '50px' }}
         />
       </div>
       <p>{game.homeTeam} vs {game.awayTeam}</p>

@@ -21,9 +21,32 @@
               "available": true
             }
           ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "days": [
+        {
+          "date": "2024-09-13",
+          "games": [
+            {
+              "homeTeam": "Bills",
+              "homeAlias": "BILL",
+              "awayTeam": "Dolphins",
+              "awayAlias": "DEL",
+              "timeUS": "13:00",
+              "imageURLHome": "/images/KC_home.png",
+              "imageURLAway": "/images/KC_away.png",
+              "imageLogoHome": "/images/logos/BILL.png",
+              "imageLogoAway": "/images/logos/DEL.png",
+              "channel": "Courtyard",
+              "available": false
+            }
+          ]
         },
         {
-          "date": "2024-09-11",
+          "date": "2024-09-15",
           "games": [
             {
               "homeTeam": "Giants",
@@ -44,60 +67,6 @@
               "awayTeam": "Colts",
               "awayAlias": "IND",
               "timeUS": "13:00",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
-              "imageLogoHome": "/images/logos/BILL.png",
-              "imageLogoAway": "/images/logos/BILL.png",
-              "channel": "Courtyard",
-              "available": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 2,
-      "days": [
-        {
-          "date": "2024-09-12",
-          "games": [
-            {
-              "homeTeam": "Bills",
-              "homeAlias": "BILL",
-              "awayTeam": "Dolphins",
-              "awayAlias": "DEL",
-              "timeUS": "20:15",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
-              "imageLogoHome": "/images/logos/BILL.png",
-              "imageLogoAway": "/images/logos/DEL.png",
-              "channel": "Courtyard",
-              "available": false
-            }
-          ]
-        },
-        {
-          "date": "2024-09-13",
-          "games": [
-            {
-              "homeTeam": "Ravens",
-              "homeAlias": "BAL",
-              "awayTeam": "Steelers",
-              "awayAlias": "PIT",
-              "timeUS": "13:00",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
-              "imageLogoHome": "/images/logos/BILL.png",
-              "imageLogoAway": "/images/logos/BILL.png",
-              "channel": "Courtyard",
-              "available": false
-            },
-            {
-              "homeTeam": "Eagles",
-              "homeAlias": "PHI",
-              "awayTeam": "Cowboys",
-              "awayAlias": "DAL",
-              "timeUS": "16:25",
               "imageURLHome": "/images/KC_home.png",
               "imageURLAway": "/images/KC_away.png",
               "imageLogoHome": "/images/logos/BILL.png",

@@ -1,0 +1,22 @@
+/* MiniCard.css */
+
+.mini-card {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 10px; /* Padding inside the card */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  text-align: center; /* Center align text */
+  margin: 10px; /* Margin around the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for 3D effect */
+}
+
+.images-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute space around images */
+  margin: 10px 0; /* Vertical margin for spacing */
+}
+
+.images-container img {
+  max-width: 50px; /* Ensure images do not exceed 50px width */
+  max-height: 50px; /* Ensure images do not exceed 50px height */
+}
