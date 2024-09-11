@@ -1,0 +1,41 @@
+/* DateBlock.css */
+
+.date-block-container {
+  margin-bottom: 2rem; /* Space between date blocks */
+}
+
+.date-block {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Space between date and games */
+  color: #f9d3b4; /* Date text color */
+  background-color: #343739; /* Background color for date block */
+  padding: 0.5rem 1rem; /* Padding inside date block */
+  border-radius: 8px; /* Rounded corners for date block */
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between game cards */
+}
+
+.game-card-wrapper {
+  flex: 1 1 calc(50% - 1rem); /* Two columns layout with gap adjustment */
+  max-width: calc(50% - 1rem); /* Ensure game cards do not exceed the width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+@media (min-width: 768px) {
+  .game-card-wrapper {
+    flex: 1 1 calc(33.33% - 1rem); /* Three columns layout for larger screens */
+    max-width: calc(33.33% - 1rem); /* Adjust for three columns */
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-card-wrapper {
+    flex: 1 1 calc(25% - 1rem); /* Four columns layout for very large screens */
+    max-width: calc(25% - 1rem); /* Adjust for four columns */
+  }
+}
