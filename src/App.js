@@ -5,42 +5,31 @@ import ReactPlayer from 'react-player';
 import './App.css';
 
 export const App = () => {
-  // Get current date
-  const today = new Date();
+  // Get current date in YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0];
 
-  // Function to get the next three days of games
+  // Function to get the next three days of games that exist in the JSON
   const getNextThreeDaysGames = () => {
-    const nextThreeDays = [];
-    const allGames = [];
+    const allGameDays = [];
 
-    // Collect all games from all weeks
+    // Collect all game days from all weeks
     seasonData.weeks.forEach(week => {
       week.days.forEach(day => {
-        allGames.push({
+        allGameDays.push({
           date: day.date,
           games: day.games
         });
       });
     });
 
-    console.log("All games data:", allGames); // Debugging line
+    console.log("All game days:", allGameDays); // Debugging line
 
-    for (let i = 0; i < 3; i++) {
-      const nextDate = new Date(today);
-      nextDate.setDate(today.getDate() + i); // Increment the date by i days
-      const formattedDate = nextDate.toISOString().split('T')[0]; // Format as YYYY-MM-DD
+    // Filter only future game days, starting from today
 
-      // Find games for this date
-      const gamesForDate = allGames.find(gameDay => gameDay.date === formattedDate);
+    const futureGameDays = allGameDays.filter(day => day.date >= today);
 
-      // Log the date and games for debugging
-      console.log(`Checking date: ${formattedDate}, Games found:`, gamesForDate);
-
-      // If games exist for this date, push the date and games to the result array
-      if (gamesForDate) {
-        nextThreeDays.push(gamesForDate);
-      }
-    }
+    // Get the next 3 game days from the filtered future days
+    const nextThreeDays = futureGameDays.slice(0, 3);
 
     return nextThreeDays;
   };
@@ -49,13 +38,13 @@ export const App = () => {
   const nextThreeDaysGames = getNextThreeDaysGames();
 
   // Debugging line to check the final result
-  console.log("Next three days games:", nextThreeDaysGames);
+  console.log("Next three game days with games:", nextThreeDaysGames);
 
   return (
     <div className="App">
       {/* Video Hype */}
       <div className="container">
-        <ReactPlayer url="https://www.youtube.com/watch?v=icMWlRCt5qo" />
+        <ReactPlayer url="https://www.youtube.com/watch?v=C10Pe5XWjpY&t=41s" />
       </div>
 
       {/* Display the next three days of games */}
