@@ -1,23 +1,36 @@
-// GameCard.jsx
 import React from 'react';
 
 const GameCard = ({ game }) => {
   console.log("Rendering game in GameCard:", game); // Debugging line
 
   return (
-    <div className="game-card">
-      <div className="team-info">
-        <h3>{game.homeTeam} vs {game.awayTeam}</h3>
-        <p>{game.timeUS}</p>
+    <div className="w-80 h-40 m-6 relative rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+      {/* Team information */}
+      <div className="absolute top-0 left-0 w-full p-4 opacity-0 hover:opacity-100 text-white transition-opacity">
+        <p className="text-sm uppercase tracking-wider">{game.date}</p>
+        <h3 className="text-xl">{game.homeTeam} vs {game.awayTeam}</h3>
       </div>
-      <div className="team-logos">
-        {/* Use imageURLHome and imageURLAway from the game data */}
-        <img src={game.imageURLHome} alt={`${game.homeTeam} logo`} />
-        <img src={game.imageURLAway} alt={`${game.awayTeam} logo`} />
+
+      {/* Team logos */}
+      <div className="flex justify-center items-center h-full bg-gray-800">
+        <img
+          src={game.imageURLHome}
+          alt={`${game.homeTeam} logo`}
+          className="w-1/2 object-contain"
+        />
+        <img
+          src={game.imageURLAway}
+          alt={`${game.awayTeam} logo`}
+          className="w-1/2 object-contain"
+        />
+      </div>
+
+      {/* Game details at the bottom */}
+      <div className="absolute bottom-0 left-0 right-0 bg-gray-900 p-4 text-white">
+        <span className="text-xs uppercase tracking-wider">{game.timeUS}</span>
       </div>
     </div>
   );
 };
 
 export default GameCard;
-
