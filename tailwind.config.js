@@ -1,12 +1,18 @@
 module.exports = {
-  mode:'jit', // just in time
-  purge: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',  // This will include all files inside your src folder
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        'orange-200': '#f9d3b4',
+        'gray-900': '#212426',
+      },
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
+};
