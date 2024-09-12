@@ -8,9 +8,12 @@ const MiniCard = ({ game }) => {
   const defaultImage = "/images/404_home.png"; // Fallback image if URLs are invalid
 
   return (
-    <div className="flex border border-gray-300 rounded-lg shadow-md overflow-hidden m-2">
+    <div className="w-[19rem] flex border border-gray-300 rounded-lg shadow-md overflow-hidden m-2">
       {/* Home team half */}
-      <div className="w-1/2 bg-blue-900 p-4 flex flex-col justify-center items-center text-white">
+      <div
+        className="w-1/2 p-4 flex flex-col justify-center items-center text-white"
+        style={{ backgroundColor: game.homeColor }} // Apply dynamic background color
+      >
         <p className="text-lg font-bold mb-2">{game.timeUS}</p>
         <img
           src={game.imageLogoHome || defaultImage}
@@ -21,7 +24,10 @@ const MiniCard = ({ game }) => {
       </div>
 
       {/* Away team half */}
-      <div className="w-1/2 bg-green-200 p-4 flex flex-col justify-center items-center text-black">
+      <div
+        className="w-1/2 p-4 flex flex-col justify-center items-center text-black"
+        style={{ backgroundColor: game.awayColor }} // Apply dynamic background color
+      >
         <p className="text-lg font-bold mb-2">{game.timeUS}</p>
         <img
           src={game.imageLogoAway || defaultImage}
@@ -35,4 +41,3 @@ const MiniCard = ({ game }) => {
 };
 
 export default MiniCard;
-

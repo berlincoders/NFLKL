@@ -17,24 +17,28 @@
               "imageURLAway": "/images/KC_away.png",
               "imageLogoHome": "/images/logos/BILL.png",
               "imageLogoAway": "/images/logos/DEL.png",
+              "homeColor": "bg-blue-900",
+              "awayColor": "bg-green-200",
               "channel": "Courtyard",
               "available": false
             }
           ]
         },
         {
-          "date": "2024-09-20",
+          "date": "2024-09-15",
           "games": [
             {
-              "homeTeam": "Giants",
-              "homeAlias": "NYG",
-              "awayTeam": "Browns",
-              "awayAlias": "CLE",
+              "homeTeam": "Riders",
+              "homeAlias": "RID",
+              "awayTeam": "Ravens",
+              "awayAlias": "RAVE",
               "timeUS": "13:00",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
-              "imageLogoHome": "/images/logos/BILL.png",
-              "imageLogoAway": "/images/logos/DEL.png",
+              "imageURLHome": "/images/RID_home.png",
+              "imageURLAway": "/images/rave_away.png",
+              "imageLogoHome": "/images/logos/RID.png",
+              "imageLogoAway": "/images/logos/RAVE.png",
+              "homeColor": "bg-black",
+              "awayColor": "bg-purple-300",
               "channel": "Courtyard",
               "available": false
             },
@@ -48,6 +52,38 @@
               "imageURLAway": "/images/KC_away.png",
               "imageLogoHome": "/images/logos/BILL.png",
               "imageLogoAway": "/images/logos/BILL.png",
+              "homeColor": "bg-blue-900",
+              "awayColor": "bg-green-200",
+              "channel": "Courtyard",
+              "available": false
+            },
+            {
+              "homeTeam": "Bears",
+              "homeAlias": "CHI",
+              "awayTeam": "Colts",
+              "awayAlias": "IND",
+              "timeUS": "13:00",
+              "imageURLHome": "/images/KC_home.png",
+              "imageURLAway": "/images/KC_away.png",
+              "imageLogoHome": "/images/logos/BILL.png",
+              "imageLogoAway": "/images/logos/BILL.png",
+              "homeColor": "bg-blue-900",
+              "awayColor": "bg-green-200",
+              "channel": "Courtyard",
+              "available": false
+            },
+            {
+              "homeTeam": "Bears",
+              "homeAlias": "CHI",
+              "awayTeam": "Colts",
+              "awayAlias": "IND",
+              "timeUS": "13:00",
+              "imageURLHome": "/images/KC_home.png",
+              "imageURLAway": "/images/KC_away.png",
+              "imageLogoHome": "/images/logos/BILL.png",
+              "imageLogoAway": "/images/logos/BILL.png",
+              "homeColor": "bg-blue-900",
+              "awayColor": "bg-green-200",
               "channel": "Courtyard",
               "available": false
             }
