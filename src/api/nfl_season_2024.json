@@ -2,29 +2,6 @@
   "season": "2024",
   "weeks": [
     {
-      "week": 1,
-      "days": [
-        {
-          "date": "2024-09-20",
-          "games": [
-            {
-              "homeTeam": "Patriots",
-              "homeAlias": "NE",
-              "awayTeam": "Jets",
-              "awayAlias": "NYJ",
-              "timeUS": "20:15",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
-              "imageLogoHome": "/images/logos/BILL.png",
-              "imageLogoAway": "/images/logos/BILL.png",
-              "channel": "Courtyard",
-              "available": true
-            }
-          ]
-        }
-      ]
-    },
-    {
       "week": 2,
       "days": [
         {
@@ -35,7 +12,7 @@
               "homeAlias": "BILL",
               "awayTeam": "Dolphins",
               "awayAlias": "DEL",
-              "timeUS": "13:00",
+              "timeUS": "2:15",
               "imageURLHome": "/images/KC_home.png",
               "imageURLAway": "/images/KC_away.png",
               "imageLogoHome": "/images/logos/BILL.png",
@@ -46,7 +23,7 @@
           ]
         },
         {
-          "date": "2024-09-15",
+          "date": "2024-09-16",
           "games": [
             {
               "homeTeam": "Giants",
