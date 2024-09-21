@@ -280,17 +280,16 @@
             {
               "homeTeam": "Chefs",
               "homeAlias": "KL",
-              "awayTeam": "Eagles",
+              "awayTeam": "Falcons",
               "awayAlias": "FALCO",
               "timeUS": "2:20",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
+              "imageURL": "/images/chiefs_falcons.webp",
               "imageLogoHome": "/images/logos/KC.png",
               "imageLogoAway": "/images/logos/FALCO.png",
               "homeColor": "#D91656",
               "awayColor": "#B8001F",
               "channel": "Courtyard",
-              "available": false
+              "available": true
             }
           ]
         },

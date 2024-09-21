@@ -3,6 +3,7 @@ import GameCard from './GameCard';
 import MiniCard from './MiniCard';
 import PrevButton from './PrevButton';
 import DateDisplay from './DateDisplay'; // Import the DateDisplay component
+import NextButton from './NextButton';
 
 const DateBlock = ({ date, games, onPrevClick }) => {
   return (
@@ -14,7 +15,8 @@ const DateBlock = ({ date, games, onPrevClick }) => {
 
       {/* Second Column: Main Content */}
       <div className="flex-1">
-        <div className=" mb-2 ">
+        <div className=" mb-2 flex justify-end">
+          <NextButton onClick={onPrevClick} />
           <PrevButton onClick={onPrevClick} />
         </div>
 
