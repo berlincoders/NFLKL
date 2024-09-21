@@ -11,17 +11,12 @@ const GameCard = ({ game }) => {
         <h3 className="text-xl">{game.homeTeam} vs {game.awayTeam}</h3>
       </div>
 
-      {/* Team logos */}
+      {/* Single image */}
       <div className="flex justify-center items-center h-full bg-gray-800">
         <img
-          src={game.imageURLHome}
-          alt={`${game.homeTeam} logo`}
-          className="w-1/2 object-contain"
-        />
-        <img
-          src={game.imageURLAway}
-          alt={`${game.awayTeam} logo`}
-          className="w-1/2 object-contain"
+          src={game.imageURL}
+          alt={`${game.homeTeam} vs ${game.awayTeam}`}
+          className="w-full h-full object-cover"
         />
       </div>
 
@@ -34,3 +29,4 @@ const GameCard = ({ game }) => {
 };
 
 export default GameCard;
+

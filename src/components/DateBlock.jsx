@@ -14,7 +14,7 @@ const DateBlock = ({ date, games, onPrevClick }) => {
 
       {/* Second Column: Main Content */}
       <div className="flex-1">
-        <div className="text-2xl font-bold mb-2 text-center text-gray-100">
+        <div className=" mb-2 ">
           <PrevButton onClick={onPrevClick} />
         </div>
 
