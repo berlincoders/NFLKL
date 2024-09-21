@@ -1,27 +1,37 @@
 import React from 'react';
 import GameCard from './GameCard';
 import MiniCard from './MiniCard';
+import PrevButton from './PrevButton';
+import DateDisplay from './DateDisplay'; // Import the DateDisplay component
 
-const DateBlock = ({ date, games }) => {
-  console.log(`DateBlock for ${date} with games:`, games);
-
+const DateBlock = ({ date, games, onPrevClick }) => {
   return (
-    <div className="mb-5 w-full">
-      <div className="text-2xl font-bold mb-2 text-center text-gray-100">{date}</div>
-      <div className="flex flex-wrap gap-2 justify-center">
-        {games.map((game, index) => (
-          <div key={index} className="flex-shrink-0 max-w-[19rem]">
-            {game.available ? (
-              <GameCard game={game} />
-            ) : (
-              <MiniCard game={game} />
-            )}
-          </div>
-        ))}
+    <div className="mb-5 w-full flex">
+      {/* First Column: DateDisplay component  */}
+      <div className="w-[52px] text-center mt-12">
+        <DateDisplay date={date} /> {/* Use DateDisplay component */}
+      </div>
+
+      {/* Second Column: Main Content */}
+      <div className="flex-1">
+        <div className="text-2xl font-bold mb-2 text-center text-gray-100">
+          <PrevButton onClick={onPrevClick} />
+        </div>
+
+        <div className="flex flex-wrap gap-2 justify-start">
+          {games.map((game, index) => (
+            <div key={index} className="flex-shrink-0 max-w-[19rem]">
+              {game.available ? (
+                <GameCard game={game} />
+              ) : (
+                <MiniCard game={game} />
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default DateBlock;
-
