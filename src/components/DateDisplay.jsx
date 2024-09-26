@@ -11,9 +11,9 @@ const DateDisplay = ({ date }) => {
   return (
     <aside className="w-[52px]">
       <div className="text-center">
-        <p className="text-sm font-bold text-gray-100">{dayOfWeek}</p> {/* Day of the week */}
+        <p className="text-[20px] font-bold text-gray-100">{dayOfWeek}</p> {/* Day of the week */}
         <h2 className="text-[32px] font-bold text-gray-100">{dayNumber}</h2> {/* Day number */}
-        <p className="text-sm text-gray-100">{month}</p> {/* Month */}
+        <p className="text-[20px] text-gray-100">{month}</p> {/* Month */}
       </div>
     </aside>
   );
