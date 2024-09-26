@@ -8,7 +8,7 @@ const MiniCard = ({ game }) => {
   const defaultImage = "/images/404_home.png"; // Fallback image if URLs are invalid
 
   return (
-    <div className="w-[19rem] flex border border-gray-300 rounded-lg shadow-md overflow-hidden m-2">
+    <div className="w-80 h-40 flex border border-gray-300 rounded-lg shadow-md overflow-hidden m-6">
       {/* Home team half */}
       <div
         className="w-1/2 p-4 flex flex-col justify-center items-center text-white"
@@ -41,3 +41,4 @@ const MiniCard = ({ game }) => {
 };
 
 export default MiniCard;
+

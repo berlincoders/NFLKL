@@ -20,9 +20,10 @@ const DateBlock = ({ date, games, onPrevClick }) => {
           <PrevButton onClick={onPrevClick} />
         </div>
 
+          {/* Here is the wrap and the iteration over the games */}
         <div className="flex flex-wrap gap-2 justify-start">
           {games.map((game, index) => (
-            <div key={index} className="flex-shrink-0 max-w-[19rem]">
+            <div key={index} className="flex-shrink-0 max-w-[25rem]">
               {game.available ? (
                 <GameCard game={game} />
               ) : (
