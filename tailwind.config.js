@@ -15,6 +15,7 @@ module.exports = {
         'cowboys-blue': '#003594', // for royal blue,
         'gians-blue': '#0B2265',    // 0B2265 for dark blue Gians
         'chargers-blue': '#0B2265',   // #0080C6 for powder blue,
+        'browns-brown': '#311D00', //311D00 for dark brown
       },
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
