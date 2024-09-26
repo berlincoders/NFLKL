@@ -17,7 +17,7 @@ const PrevButton = ({ onClick }) => {
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M3.22763 4.5L0 7.64801L1.38619 9L6 4.5L1.38618 0L0 1.35199L3.22763 4.5Z"
+          d="M2.77237 4.5L6 7.64801L4.61381 9L0 4.5L4.61382 0L6 1.35199L2.77237 4.5Z"
           fill="#F9FAFA"
         />
       </svg>
@@ -26,4 +26,3 @@ const PrevButton = ({ onClick }) => {
 };
 
 export default PrevButton;
-

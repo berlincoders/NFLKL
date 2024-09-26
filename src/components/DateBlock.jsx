@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import GameCard from './GameCard';
 import MiniCard from './MiniCard';
-import PrevButton from './PrevButton';
+import PrevButton from './NextButton';
 import DateDisplay from './DateDisplay';
-import NextButton from './NextButton';
+import NextButton from './PrevButton';
 
 const DateBlock = ({ date, games, onPrevClick }) => {
   const scrollRef = useRef(null);
@@ -49,7 +49,7 @@ const DateBlock = ({ date, games, onPrevClick }) => {
             </div>
           ))}
         </div>
-        
+
       </div>
     </div>
   );
