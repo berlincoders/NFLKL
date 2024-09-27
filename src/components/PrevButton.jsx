@@ -3,7 +3,7 @@ import React from 'react';
 const PrevButton = ({ onClick }) => {
   return (
     <button
-      className="flex items-center justify-center w-10 h-10 rounded-full"
+      className="flex items-center justify-center w-6 h-6 rounded-full"
       style={{ backgroundColor: '#3C3D37' }}
       onClick={onClick}
     >
