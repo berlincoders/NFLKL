@@ -5,10 +5,10 @@ const MiniCard = ({ game }) => {
     return null;
   }
 
-  const defaultImage = "/images/404_home.png"; // Fallback image if URLs are invalid
+  const defaultImage = "/images/404_home.png";
 
   return (
-    <div className="w-80 m-6">
+    <div className="w-80 m-1"> {/* m1 separations between the card */}
       {/* Main Card (Home and Away Teams) */}
       <div className="h-40 flex border border-gray-300 rounded-lg shadow-md overflow-hidden">
         {/* Home team half */}

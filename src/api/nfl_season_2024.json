@@ -334,26 +334,6 @@
       "week": 4,
       "days": [
         {
-          "date": "2024-09-27",
-          "games": [
-            {
-              "homeTeam": "Cowboys",
-              "homeAlias": "COW",
-              "awayTeam": "Giants",
-              "awayAlias": "GIA",
-              "timeUS": "2:15",
-              "imageURLHome": "/images/KC_home.png",
-              "imageURLAway": "/images/KC_away.png",
-              "imageLogoHome": "/images/logos/COW.png",
-              "imageLogoAway": "/images/logos/GIA.png",
-              "homeColor": "#003594",
-              "awayColor": "#0B2265",
-              "channel": "Courtyard",
-              "available": false
-            }
-          ]
-        },
-        {
           "date": "2024-09-29",
           "games": [
             {
@@ -558,22 +538,37 @@
           ]
         },
         {
-          "date": "2024-09-31",
+          "date": "2024-10-01",
           "games": [
             {
-              "homeTeam": "Chefs",
-              "homeAlias": "KL",
-              "awayTeam": "Falcons",
-              "awayAlias": "FALCO",
+              "homeTeam": "Titans",
+              "homeAlias": "TITAN",
+              "awayTeam": "Dolphins",
+              "awayAlias": "DOLP",
               "timeUS": "2:20",
               "timeEU": "",
-              "imageURL": "/images/chiefs_falcons.webp",
-              "imageLogoHome": "/images/logos/KC.png",
-              "imageLogoAway": "/images/logos/FALCO.png",
+              "imageURL": "/images/monday_night.webp",
+              "imageLogoHome": "/images/logos/TITAN.png",
+              "imageLogoAway": "/images/logos/DOLP.png",
               "homeColor": "#D91656",
               "awayColor": "#B8001F",
               "channel": "Courtyard",
               "available": true
+            },
+            {
+              "homeTeam": "SeaHawks",
+              "homeAlias": "SEA",
+              "awayTeam": "lions",
+              "awayAlias": "LION",
+              "timeUS": "1:30 AM",
+              "timeEU": "23:00 2024-09-23",
+              "imageURL": "/images/billsjags.webp",
+              "imageLogoHome": "/images/logos/JAG.webp",
+              "imageLogoAway": "/images/logos/BIL.png",
+              "homeColor": "#006778",
+              "awayColor": "#00338D",
+              "channel": "DAZN Germany (OTT)",
+              "available": false
             }
           ]
         },

@@ -2,6 +2,7 @@ import React from 'react';
 import DateBlock from './components/DateBlock';
 import seasonData from './api/nfl_season_2024.json';
 import ReactPlayer from 'react-player';
+import Footer from './components/Footer'; // Adjust the path if necessary
 import './App.css';
 
 export const App = () => {
@@ -62,6 +63,10 @@ export const App = () => {
           ))
         )}
       </div>
+      <div>
+      {/* Other components and content */}
+      <Footer />
+    </div>
     </div>
   );
 };

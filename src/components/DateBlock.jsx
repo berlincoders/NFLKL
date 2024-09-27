@@ -45,8 +45,8 @@ const DateBlock = ({ date, games }) => {
       </div>
 
       {/* Second Column: Main Content */}
-      <div className="flex-1 relative">
-        <div className="mb-2 flex justify-end space-x-2"> {/* Space between buttons */}
+      <div className="flex-1 relative overflow-hidden"> {/* Limit the width of the scrollable container */}
+        <div className="flex justify-between items-center absolute top-0 left-0 right-0 h-full px-2 z-10"> {/* Button positioning */}
           <PrevButton onClick={handlePrevClick} />
           <NextButton onClick={handleNextClick} />
         </div>
@@ -54,7 +54,7 @@ const DateBlock = ({ date, games }) => {
         {/* Scrollable container for GameCard and MiniCard */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto space-x-2 scrollbar-hide" // Keep overflow-x-auto
+          className="flex overflow-x-auto space-x-2 scrollbar-hide max-w-full" // Keep overflow-x-auto and limit width
           style={{ scrollBehavior: 'smooth', overscrollBehavior: 'contain' }} // Ensure smooth scrolling and prevent overflow
         >
           {/* Iteration over the limited games */}

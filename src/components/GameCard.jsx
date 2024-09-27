@@ -4,7 +4,7 @@ const GameCard = ({ game }) => {
   console.log("Rendering game in GameCard:", game); // Debugging line
 
   return (
-    <div className="w-80 m-6">
+    <div className="w-80 m-1">
       {/* Wrapper div with hover effect */}
       <div className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
         {/* Image section */}
@@ -49,4 +49,3 @@ const GameCard = ({ game }) => {
 };
 
 export default GameCard;
-
