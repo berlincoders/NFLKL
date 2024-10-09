@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const userRoutes = require('./routes/user'); // Adjust the path if necessary
-const gameRoutes = require("./routes/games");
+const userRoutes = require('./routes/user'); // User routes
+const gameRoutes = require("./routes/games"); // Game routes
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Now express should run in port 5000
+const PORT = process.env.PORT || 5000; // Express will run on port 5000
 
 // Middleware to parse JSON
 app.use(express.json());
@@ -18,8 +18,8 @@ mongoose.connect('mongodb://localhost/NFLKL', {
 .catch(err => console.log(err));
 
 // Use user routes
-app.use('/api', userRoutes); // This mounts the routes under /api
-app.use("/api", gameRoutes);
+app.use('/api', userRoutes); // Mount user routes under /api
+app.use("/api", gameRoutes); // Mount game routes under /api
 
 // Start the server
 app.listen(PORT, () => {

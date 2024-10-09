@@ -13,20 +13,32 @@ export const App = () => {
   const getNextThreeDaysGames = () => {
     const allGameDays = [];
 
-    // Collect all game days from all weeks
-    seasonData.weeks.forEach(week => {
-      week.days.forEach(day => {
-        allGameDays.push({
-          date: day.date,
-          games: day.games
-        });
+    // Debugging line to check if seasonData is what we expect
+    console.log("Season data:", seasonData);
+
+    // Check if the seasons exist and loop through them
+    if (seasonData.seasons && seasonData.seasons.length > 0) {
+      seasonData.seasons.forEach(season => {   // Access 'seasons'
+        if (season.weeks && season.weeks.length > 0) {
+          season.weeks.forEach(week => {
+            if (week.days && week.days.length > 0) {
+              week.days.forEach(day => {       // Now access 'days'
+                allGameDays.push({
+                  date: day.date,
+                  games: day.games
+                });
+              });
+            }
+          });
+        }
       });
-    });
+    } else {
+      console.error("No seasons data found");
+    }
 
     console.log("All game days:", allGameDays); // Debugging line
 
     // Filter only future game days, starting from today
-
     const futureGameDays = allGameDays.filter(day => day.date >= today);
 
     // Get the next 3 game days from the filtered future days
