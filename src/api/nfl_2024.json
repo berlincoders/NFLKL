@@ -71,6 +71,25 @@
                   "available": true
                 }
               ]
+            },
+            {
+              "date": "2024-10-14",
+              "games": [
+                {
+                  "homeTeam": "Chargers",
+                  "homeAlias": "CHAR",
+                  "awayTeam": "Chiefs",
+                  "awayAlias": "KC",
+                  "timeUS": "02:15",
+                  "imageURL": "/images/london.png",
+                  "imageLogoHome": "/images/logos/CHAR.png",
+                  "imageLogoAway": "/images/logos/KC.png",
+                  "homeColor": "#0B2265",
+                  "awayColor": "#E31837",
+                  "channel": "Courtyard",
+                  "available": true
+                }
+              ]
             }
           ]
         }

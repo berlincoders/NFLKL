@@ -28,6 +28,19 @@ const readGamesData = () => {
   });
 };
 
+// Function to save updated games data
+const saveGamesData = (gamesData) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(path.join(__dirname, filePath), JSON.stringify(gamesData, null, 2), (err) => {
+      if (err) {
+        console.error('Error saving games JSON file:', err);
+        return reject({ error: 'Error saving games data' });
+      }
+      resolve();
+    });
+  });
+};
+
 // Route to get games with optional filtering
 router.get('/games', async (req, res) => {
   try {
@@ -77,6 +90,48 @@ router.post('/games', async (req, res) => {
   } catch (error) {
     console.error("Error adding new game:", error);
     res.status(400).json({ error: 'Unable to add game' }); // Handle errors
+  }
+});
+
+// DELETE route to delete a game
+router.delete('/games', async (req, res) => {
+  const { date, homeTeam, awayTeam } = req.body; // Extract date and teams from request body
+
+  try {
+    const gamesData = await readGamesData();
+
+    // Find the correct date entry
+    let gameFound = false;
+
+    if (gamesData.seasons && gamesData.seasons.length > 0) {
+      gamesData.seasons.forEach(season => {
+        season.weeks.forEach(week => {
+          week.dates.forEach(dateData => {
+            if (dateData.date === date) {
+              // Filter out the game to delete
+              const initialLength = dateData.games.length;
+              dateData.games = dateData.games.filter(g =>
+                g.homeTeam !== homeTeam || g.awayTeam !== awayTeam
+              );
+
+              // Check if a game was actually removed
+              if (dateData.games.length < initialLength) {
+                gameFound = true; // Mark that a game was found and removed
+              }
+            }
+          });
+        });
+      });
+    }
+
+    if (gameFound) {
+      await saveGamesData(gamesData); // Save updated data
+      return res.status(200).json({ message: 'Game deleted successfully' });
+    } else {
+      return res.status(404).json({ error: 'Game not found' });
+    }
+  } catch (error) {
+    res.status(500).json(error);
   }
 });
 
