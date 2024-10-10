@@ -21,12 +21,12 @@
                   "homeColor": "#E31837",
                   "awayColor": "#0B2265",
                   "channel": "Courtyard",
-                  "available": true
+                  "available": false
                 }
               ]
             },
             {
-              "date": "2024-10-12",
+              "date": "2024-10-13",
               "games": [
                 {
                   "homeTeam": "Chargers",

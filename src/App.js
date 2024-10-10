@@ -1,57 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import DateBlock from './components/DateBlock';
-import seasonData from './api/nfl_2024.json';
 import ReactPlayer from 'react-player';
 import Footer from './components/Footer'; // Adjust the path if necessary
 import './App.css';
 
 export const App = () => {
-  // Get current date in YYYY-MM-DD format
-  const today = new Date().toISOString().split('T')[0];
+  const [gamesForNextDays, setGamesForNextDays] = useState([]);
 
-  // Function to get the next three days of games that exist in the JSON
-  const getNextThreeDaysGames = () => {
-    const allGameDays = [];
-
-    // Debugging line to check if seasonData is what we expect
-    console.log("Season data:", seasonData);
-
-    // Check if the seasons exist and loop through them
-    if (seasonData.seasons && seasonData.seasons.length > 0) {
-      seasonData.seasons.forEach(season => {   // Access 'seasons'
-        if (season.weeks && season.weeks.length > 0) {
-          season.weeks.forEach(week => {
-            if (week.days && week.days.length > 0) {
-              week.days.forEach(day => {       // Now access 'days'
-                allGameDays.push({
-                  date: day.date,
-                  games: day.games
-                });
-              });
-            }
-          });
-        }
-      });
-    } else {
-      console.error("No seasons data found");
-    }
-
-    console.log("All game days:", allGameDays); // Debugging line
-
-    // Filter only future game days, starting from today
-    const futureGameDays = allGameDays.filter(day => day.date >= today);
-
-    // Get the next 3 game days from the filtered future days
-    const nextThreeDays = futureGameDays.slice(0, 3);
-
-    return nextThreeDays;
+  // Function to get today's date in YYYY-MM-DD format
+  const getTodayDate = () => {
+    const today = new Date();
+    return today.toISOString().split('T')[0]; // Format date as YYYY-MM-DD
   };
 
-  // Get the next three days' games
-  const nextThreeDaysGames = getNextThreeDaysGames();
+  // Function to fetch all games from the API
+  const fetchGamesData = useCallback(async () => {
+    try {
+      const response = await fetch('http://localhost:5000/api/games');
+      const data = await response.json();
+      console.log("Fetched games data:", data); // Debugging line
 
-  // Debugging line to check the final result
-  console.log("Next three game days with games:", nextThreeDaysGames);
+      const today = getTodayDate();
+
+      // Filter games starting from today's date
+      const futureGames = data.filter(game => game.date >= today);
+
+      // Get unique available dates starting from today
+      const uniqueDates = [...new Set(futureGames.map(game => game.date))].slice(0, 3); // Get today + next 2 days
+
+      // Filter the games based on the available unique dates
+      const filteredGames = futureGames.filter(game => uniqueDates.includes(game.date));
+
+      setGamesForNextDays(filteredGames);
+    } catch (error) {
+      console.error('Error fetching games data:', error);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchGamesData();
+  }, [fetchGamesData]);
 
   return (
     <div className="App">
@@ -60,25 +48,20 @@ export const App = () => {
         <ReactPlayer url="https://www.youtube.com/watch?v=C10Pe5XWjpY&t=41s" />
       </div>
 
-      {/* Display the next three days of games */}
+      {/* Display the games for the next 3 available days */}
       <div className="container">
-        {nextThreeDaysGames.length === 0 ? (
+        {gamesForNextDays.length === 0 ? (
           <div className="empty">
-            <h2>No games scheduled for the next three days.</h2>
+            <h2>No games scheduled for the next three available days.</h2>
           </div>
         ) : (
-          nextThreeDaysGames.map(({ date, games }, index) => (
-            <div key={index} className="day-container">
-              {/* DateBlock for the date */}
-              <DateBlock date={date} games={games} />
-            </div>
-          ))
+          <DateBlock dates={gamesForNextDays} />
         )}
       </div>
       <div>
-      {/* Other components and content */}
-      <Footer />
-    </div>
+        {/* Other components and content */}
+        <Footer />
+      </div>
     </div>
   );
 };

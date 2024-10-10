@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors'); // Import cors
 const userRoutes = require('./routes/user'); // User routes
 const gameRoutes = require("./routes/games"); // Game routes
 
@@ -8,6 +9,7 @@ const PORT = process.env.PORT || 5000; // Express will run on port 5000
 
 // Middleware to parse JSON
 app.use(express.json());
+app.use(cors()); // Use cors middleware
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost/NFLKL', {

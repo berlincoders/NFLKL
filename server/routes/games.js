@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const Game = require('../models/Game'); // Import the Game model
 
 const router = express.Router();
 
@@ -34,8 +35,9 @@ router.get('/games', async (req, res) => {
 
     // Get the date from the query parameters
     const date = req.query.date;
+    console.log("Query date:", date);
 
-    let filteredGames = [];
+    let filteredDates = [];
 
     // Check if the data contains weeks
     if (gamesData.seasons && gamesData.seasons.length > 0) {
@@ -45,7 +47,7 @@ router.get('/games', async (req, res) => {
           weekData.dates.forEach(dateData => {
             // Filter by date if specified
             if (!date || dateData.date === date) {
-              filteredGames.push({
+              filteredDates.push({
                 date: dateData.date,
                 games: dateData.games
               });
@@ -55,10 +57,26 @@ router.get('/games', async (req, res) => {
       });
     }
 
-    // Send filtered games or an empty array if no games found for the date
-    res.json(filteredGames.length > 0 ? filteredGames : []);
+    console.log("Filtered dates:", filteredDates);
+
+    // Send filtered dates or an empty array if no dates found for the date
+    res.json(filteredDates.length > 0 ? filteredDates : []);
   } catch (error) {
     res.status(500).json(error);
+  }
+});
+
+// POST route to add a new game
+router.post('/games', async (req, res) => {
+  try {
+    const newGameData = req.body; // Get game data from request body
+    const newGame = new Game(newGameData); // Create a new game instance
+
+    await newGame.save(); // Save the new game to the database
+    res.status(201).json(newGame); // Respond with the created game
+  } catch (error) {
+    console.error("Error adding new game:", error);
+    res.status(400).json({ error: 'Unable to add game' }); // Handle errors
   }
 });
 
