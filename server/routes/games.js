@@ -40,27 +40,31 @@ const saveGamesData = (gamesData) => {
     });
   });
 };
-
-// Route to get games with optional filtering
+// Fetch Both JSON and MongoDB Data
 router.get('/games', async (req, res) => {
   try {
-    const gamesData = await readGamesData();
-
     // Get the date from the query parameters
     const date = req.query.date;
     console.log("Query date:", date);
 
-    let filteredDates = [];
+    let query = {};
+    if (date) {
+      query.date = date;
+    }
 
-    // Check if the data contains weeks
-    if (gamesData.seasons && gamesData.seasons.length > 0) {
-      // Iterate over seasons and weeks to find games
-      gamesData.seasons.forEach(season => {
+    // Fetch games from MongoDB
+    const mongoGames = await Game.find(query);
+
+    // Fetch games from JSON file
+    const jsonGamesData = await readGamesData();
+
+    let jsonGames = [];
+    if (jsonGamesData.seasons && jsonGamesData.seasons.length > 0) {
+      jsonGamesData.seasons.forEach(season => {
         season.weeks.forEach(weekData => {
           weekData.dates.forEach(dateData => {
-            // Filter by date if specified
             if (!date || dateData.date === date) {
-              filteredDates.push({
+              jsonGames.push({
                 date: dateData.date,
                 games: dateData.games
               });
@@ -70,14 +74,18 @@ router.get('/games', async (req, res) => {
       });
     }
 
-    console.log("Filtered dates:", filteredDates);
+    // Combine MongoDB and JSON games
+    const combinedGames = [...mongoGames, ...jsonGames];
 
-    // Send filtered dates or an empty array if no dates found for the date
-    res.json(filteredDates.length > 0 ? filteredDates : []);
+    res.json(combinedGames.length > 0 ? combinedGames : []);
   } catch (error) {
-    res.status(500).json(error);
+    console.error("Error fetching games:", error);
+    res.status(500).json({ error: 'Unable to fetch games' });
   }
 });
+
+
+
 
 // POST route to add a new game
 router.post('/games', async (req, res) => {

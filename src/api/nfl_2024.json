@@ -4,20 +4,20 @@
       "year": 2024,
       "weeks": [
         {
-          "week": 6,
+          "week": 7,
           "dates": [
             {
-              "date": "2024-10-11",
+              "date": "2024-10-18",
               "games": [
                 {
-                  "homeTeam": "Forty-Niners",
-                  "homeAlias": "49",
-                  "awayTeam": "Seahawks",
-                  "awayAlias": "SEA",
+                  "homeTeam": "json",
+                  "homeAlias": "BRO",
+                  "awayTeam": "Saints",
+                  "awayAlias": "SAIN",
                   "timeUS": "02:15",
                   "imageURL": "/images/chiefs_chargers.jpg",
                   "imageLogoHome": "/images/logos/49.png",
-                  "imageLogoAway": "/images/logos/SEA.png",
+                  "imageLogoAway": "/images/logos/SAIN.png",
                   "homeColor": "#E31837",
                   "awayColor": "#0B2265",
                   "channel": "Courtyard",
@@ -26,21 +26,21 @@
               ]
             },
             {
-              "date": "2024-10-13",
+              "date": "2024-10-20",
               "games": [
                 {
-                  "homeTeam": "Chargers",
-                  "homeAlias": "CHAR",
-                  "awayTeam": "Chiefs",
-                  "awayAlias": "KC",
+                  "homeTeam": "json",
+                  "homeAlias": "PAT",
+                  "awayTeam": "jaguars",
+                  "awayAlias": "JAG",
                   "timeUS": "02:15",
                   "imageURL": "/images/london.png",
-                  "imageLogoHome": "/images/logos/CHAR.png",
+                  "imageLogoHome": "/images/logos/PAT.png",
                   "imageLogoAway": "/images/logos/KC.png",
                   "homeColor": "#0B2265",
                   "awayColor": "#E31837",
                   "channel": "Courtyard",
-                  "available": true
+                  "available": false
                 },
                 {
                   "homeTeam": "Chargers",
@@ -73,7 +73,7 @@
               ]
             },
             {
-              "date": "2024-10-14",
+              "date": "2024-10-21",
               "games": [
                 {
                   "homeTeam": "Chargers",
